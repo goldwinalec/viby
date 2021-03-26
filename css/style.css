@@ -462,8 +462,69 @@ h3 {
   margin: 0 12px;
 }
 
+.slick-dots li button {
+  width: 10px;
+  height: 10px;
+}
+
 .slick-dots .slick-active {
   background-color: #fff;
+}
+
+.slick-next::before,
+.slick-prev::before {
+  content: "";
+}
+
+.slick-next,
+.slick-prev {
+  background-color: transparent;
+  width: 52px;
+  height: 52px;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+}
+
+.slick-next:hover,
+.slick-prev:hover {
+  background-color: #61587a;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.slick-next:active,
+.slick-prev:active {
+  background-color: transparent;
+}
+
+.slick-next:active path,
+.slick-prev:active path {
+  fill: rgba(255, 255, 255, 0.78);
+}
+
+.slick-next {
+  right: -60px;
+}
+
+.slick-prev {
+  left: -60px;
+}
+
+.slick-prev.slick-disabled {
+  display: none;
 }
 
 .swiper-button-next svg,
