@@ -162,8 +162,7 @@ h3 {
 .main__img {
   margin-top: 43px;
   margin-bottom: 119px;
-  width: 1284px;
-  height: 732px;
+  max-width: 100%;
 }
 
 .main-bottom {
@@ -352,7 +351,7 @@ h3 {
 }
 
 .footer {
-  background: rgba(255, 255, 255, 0.03);
+  background: #352954;
   padding: 66px 0 100px;
 }
 
@@ -378,10 +377,6 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-.footer__form {
-  margin-right: 238px;
 }
 
 .footer__social-item + .footer__social-item {
@@ -421,6 +416,13 @@ h3 {
   stroke: #cc4a4a;
 }
 
+.footer__form {
+  margin-right: 368px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .footer__input {
   background: rgba(255, 255, 255, 0.39);
   border: none;
@@ -456,6 +458,7 @@ h3 {
   margin-left: 40px;
   cursor: pointer;
   border: none;
+  outline: transparent;
   transition: all 0.1s ease-in;
   -webkit-transition: all 0.1s ease-in;
   -moz-transition: all 0.1s ease-in;
@@ -466,8 +469,12 @@ h3 {
 .footer__btn:hover {
   background: #fe7878;
 }
+
 .footer__btn:active {
   background: #cc4a4a;
+  border: none;
+  outline: transparent;
+  box-shadow: none;
 }
 
 .footer__links {

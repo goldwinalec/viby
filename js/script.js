@@ -1,0 +1,1 @@
+$('.opportunities__items').slick();
