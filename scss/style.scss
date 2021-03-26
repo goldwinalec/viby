@@ -286,9 +286,10 @@ h3 {
 }
 
 .opportunities__item {
-  display: flex;
+  display: flex !important;
   align-items: flex-start;
   justify-content: space-between;
+  outline: none;
 }
 
 .opportunities__item-info {
