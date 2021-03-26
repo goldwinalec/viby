@@ -421,6 +421,55 @@ h3 {
   stroke: #cc4a4a;
 }
 
+.footer__input {
+  background: rgba(255, 255, 255, 0.39);
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  line-height: 1;
+  height: 48px;
+  color: #fff;
+  padding: 16px 90px 16px 16px;
+}
+
+.footer__input:focus {
+  border: none;
+  outline: transparent;
+}
+
+.footer__input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+.footer__input:focus::placeholder {
+  color: rgba(14, 0, 52, 0.08);
+}
+
+.footer__btn {
+  @extend %robotomono-regular;
+  font-size: 16px;
+  line-height: 1;
+  background: #ff5151;
+  color: #fff;
+  border-radius: 8px;
+  padding: 16px 33px;
+  height: 48px;
+  margin-left: 40px;
+  cursor: pointer;
+  border: none;
+  transition: all 0.1s ease-in;
+  -webkit-transition: all 0.1s ease-in;
+  -moz-transition: all 0.1s ease-in;
+  -ms-transition: all 0.1s ease-in;
+  -o-transition: all 0.1s ease-in;
+}
+
+.footer__btn:hover {
+  background: #fe7878;
+}
+.footer__btn:active {
+  background: #cc4a4a;
+}
+
 .footer__links {
   display: flex;
   flex-direction: column;
