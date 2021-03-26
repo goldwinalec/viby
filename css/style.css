@@ -10,8 +10,7 @@ body {
   font-weight: 700;
 }
 
-.main-top__link,
-.footer__btn {
+.main-top__link, .footer__btn {
   font-family: "RobotoMono-Regular", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -23,16 +22,8 @@ body {
   font-weight: 500;
 }
 
-.header__phone,
-.main-top__title,
-.main-bottom__title,
-.opportunities__item-title,
-.features__title,
-.opportunities__title,
-.responsibility__title,
-.footer__title,
-.footer__phone,
-.footer__email {
+.header__phone, .main-top__title, .main-bottom__title,
+.opportunities__item-title, .features__title, .opportunities__title, .responsibility__title, .footer__title, .footer__phone, .footer__email {
   font-family: "RobotoMono-Bold", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -42,55 +33,49 @@ body {
   font-family: "Roboto-Regular";
   font-weight: 400;
   font-display: swap;
-  src: url("/fonts/Roboto-Regular.woff2") format("woff2"),
-    url("/fonts/Roboto-Regular.woff") format("woff");
+  src: url("/fonts/Roboto-Regular.woff2") format("woff2"), url("/fonts/Roboto-Regular.woff") format("woff");
 }
 
 @font-face {
   font-family: "Roboto-Medium";
   font-weight: 500;
   font-display: swap;
-  src: url("/fonts/Roboto-Medium.woff2") format("woff2"),
-    url("/fonts/Roboto-Medium.woff") format("woff");
+  src: url("/fonts/Roboto-Medium.woff2") format("woff2"), url("/fonts/Roboto-Medium.woff") format("woff");
 }
 
 @font-face {
   font-family: "Roboto-Bold";
   font-weight: 700;
   font-display: swap;
-  src: url("/fonts/Roboto-Bold.woff2") format("woff2"),
-    url("/fonts/Roboto-Bold.woff") format("woff");
+  src: url("/fonts/Roboto-Bold.woff2") format("woff2"), url("/fonts/Roboto-Bold.woff") format("woff");
 }
 
 @font-face {
   font-family: "RobotoMono-Regular";
   font-weight: 400;
   font-display: swap;
-  src: url("/fonts/RobotoMono-Regular.woff2") format("woff2"),
-    url("/fonts/RobotoMono-Regular.woff") format("woff");
+  src: url("/fonts/RobotoMono-Regular.woff2") format("woff2"), url("/fonts/RobotoMono-Regular.woff") format("woff");
 }
 
 @font-face {
   font-family: "RobotoMono-Medium";
   font-weight: 500;
   font-display: swap;
-  src: url("/fonts/RobotoMono-Medium.woff2") format("woff2"),
-    url("/fonts/RobotoMono-Medium.woff") format("woff");
+  src: url("/fonts/RobotoMono-Medium.woff2") format("woff2"), url("/fonts/RobotoMono-Medium.woff") format("woff");
 }
 
 @font-face {
   font-family: "RobotoMono-Bold";
   font-weight: 700;
   font-display: swap;
-  src: url("/fonts/RobotoMono-Bold.woff2") format("woff2"),
-    url("/fonts/RobotoMono-Bold.woff") format("woff");
+  src: url("/fonts/RobotoMono-Bold.woff2") format("woff2"), url("/fonts/RobotoMono-Bold.woff") format("woff");
 }
 
 *,
 *::before,
 *::after {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -148,12 +133,12 @@ h3 {
   display: flex;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
   -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 20px 0;
 }
 
@@ -203,7 +188,7 @@ h3 {
   background-position: bottom center;
   background-repeat: no-repeat;
   -webkit-background-size: 100% 100%;
-  background-size: 100%;
+          background-size: 100%;
 }
 
 .main__inner {
@@ -213,12 +198,12 @@ h3 {
   display: flex;
   -webkit-box-align: stretch;
   -webkit-align-items: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .main-top__title {
@@ -236,16 +221,16 @@ h3 {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: start;
   -webkit-align-items: flex-start;
-  -ms-flex-align: start;
-  align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-left: 40px;
 }
 
@@ -261,7 +246,7 @@ h3 {
   line-height: 1;
   background: #ff5151;
   -webkit-border-radius: 8px;
-  border-radius: 8px;
+          border-radius: 8px;
   padding: 16px 47px;
   transition: all 0.1s ease-in;
   -webkit-transition: all 0.1s ease-in;
@@ -304,7 +289,7 @@ h3 {
   background-image: url("/images/features-bg.svg");
   background-repeat: no-repeat;
   -webkit-background-size: 100% 100%;
-  background-size: 100%;
+          background-size: 100%;
   background-position: 0 35%;
 }
 
@@ -315,12 +300,12 @@ h3 {
   display: flex;
   -webkit-box-align: center;
   -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .features__item:first-child .features__info {
@@ -392,12 +377,12 @@ h3 {
   display: flex;
   -webkit-box-align: center;
   -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   font-size: 22px;
   line-height: 1;
 }
@@ -427,12 +412,12 @@ h3 {
   display: flex !important;
   -webkit-box-align: start;
   -webkit-align-items: flex-start;
-  -ms-flex-align: start;
-  align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   outline: none;
   margin-bottom: 100px;
 }
@@ -507,12 +492,12 @@ h3 {
   display: flex;
   -webkit-box-align: center;
   -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .slick-next:hover,
@@ -538,10 +523,6 @@ h3 {
   left: -80px;
 }
 
-.slick-prev.slick-disabled {
-  display: none;
-}
-
 .slick-next.slick-disabled path {
   fill: rgba(255, 255, 255, 0.08);
 }
@@ -557,6 +538,10 @@ h3 {
 
 .slick-next.slick-disabled {
   cursor: default;
+}
+
+.slick-prev.slick-disabled {
+  display: none !important;
 }
 
 .swiper-button-next svg,
@@ -600,12 +585,12 @@ h3 {
   display: flex;
   -webkit-box-align: center;
   -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-bottom: 120px;
 }
 
@@ -638,12 +623,12 @@ h3 {
   display: flex;
   -webkit-box-align: end;
   -webkit-align-items: flex-end;
-  -ms-flex-align: end;
-  align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .footer__inner + .footer__inner {
@@ -657,12 +642,12 @@ h3 {
   display: flex;
   -webkit-box-align: center;
   -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .footer__social-item + .footer__social-item {
@@ -713,19 +698,19 @@ h3 {
   display: flex;
   -webkit-box-align: center;
   -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .footer__input {
   background: rgba(255, 255, 255, 0.39);
   border: none;
   -webkit-border-radius: 8px;
-  border-radius: 8px;
+          border-radius: 8px;
   font-size: 16px;
   line-height: 1;
   height: 48px;
@@ -776,7 +761,7 @@ h3 {
   background: #ff5151;
   color: #fff;
   -webkit-border-radius: 8px;
-  border-radius: 8px;
+          border-radius: 8px;
   padding: 16px 33px;
   margin-left: 40px;
   height: 48px;
@@ -799,7 +784,7 @@ h3 {
   border: none;
   outline: transparent;
   -webkit-box-shadow: none;
-  box-shadow: none;
+          box-shadow: none;
 }
 
 .footer__links {
@@ -810,16 +795,16 @@ h3 {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: end;
   -webkit-align-items: flex-end;
-  -ms-flex-align: end;
-  align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .footer__phone,
