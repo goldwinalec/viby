@@ -71,7 +71,7 @@ h3 {
   position: relative;
   font-size: 16px;
   line-height: 1;
-  letter-spacing: -2;
+  letter-spacing: -2%;
   @extend %robotomono-bold;
   border-bottom: 1px solid transparent;
 }
@@ -183,11 +183,15 @@ h3 {
 }
 
 .features {
-  padding: 134px 0 128px 110px;
+  padding: 134px 0 128px;
   background-image: url("/images/features-bg.svg");
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: 0 35%;
+}
+
+.features__items {
+  padding-left: 110px;
 }
 
 .features__item {
@@ -317,12 +321,16 @@ h3 {
   display: inline;
 }
 
-.shortcontent {
+.shortened {
   display: inline;
 }
 
 .opportunities__item-more:hover {
   color: #46a66b;
+}
+.opportunities__item-more:focus {
+  color: #46a66b;
+  border: none;
 }
 
 .slick-dots li {

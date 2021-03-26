@@ -37,26 +37,8 @@ $('.opportunities__items').slick(
     }
 );
 
-// $(document).ready(function(){
-// 	var maxLength = 350;
-// 	$(".opportunities__item-text").each(function(){
-// 		var myStr = $(this).text();
-// 		if($.trim(myStr).length > maxLength){
-// 			var newStr = myStr.substring(0, maxLength);
-// 			var removedStr = myStr.substring(maxLength, $.trim(myStr).length);
-// 			$(this).empty().html(newStr);
-// 			$(this).append(' <a href="javascript:void(0);" class="opportunities__item-more">...Читать далее</a>');
-// 			$(this).append('<span class="opportunities__item-text--more">' + removedStr + '</span>');
-// 		}
-// 	});
-// 	$(".opportunities__item-more").click(function(){
-// 		$(this).siblings(".opportunities__item-text--more").contents().unwrap();
-// 		$(this).remove();
-// 	});
-// });
-
 $('.opportunities__item-text').shorten({
 	moreText: 'Читать далее',
     lessText:'',
-    showChars: 345
+    showChars: 350
 });
