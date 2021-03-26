@@ -140,6 +140,7 @@ h3 {
 }
 
 .main-top__link {
+  text-align: center;
   @extend %robotomono-regular;
   font-size: 16px;
   line-height: 1;
@@ -151,6 +152,7 @@ h3 {
   -moz-transition: all 0.1s ease-in;
   -ms-transition: all 0.1s ease-in;
   -o-transition: all 0.1s ease-in;
+  width: 220px;
 }
 
 .main-top__link:hover {
@@ -161,9 +163,9 @@ h3 {
 }
 
 .main__img {
-  margin-top: 43px;
-  margin-bottom: 119px;
-  max-width: 100%;
+  margin: 43px auto 119px;
+  display: block;
+  max-width: 1280px;
 }
 
 .main-bottom {
