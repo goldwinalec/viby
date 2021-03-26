@@ -419,6 +419,7 @@ h3 {
       -ms-flex-pack: justify;
           justify-content: space-between;
   outline: none;
+  margin-bottom: 100px;
 }
 
 .opportunities__item-info {
@@ -444,6 +445,44 @@ h3 {
 
 .opportunities__item-more:hover {
   color: #46a66b;
+}
+
+.slick-dots li {
+  width: 10px;
+  height: 10px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+}
+
+.slick-dots li {
+  margin: 0 12px;
+}
+
+.slick-dots .slick-active {
+  background-color: #fff;
+}
+
+.swiper-button-next svg,
+.swiper-button-prev svg {
+  width: 16px;
+  height: 26px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  font-size: 0;
+}
+
+.swiper-button-next {
+  right: -10px;
+}
+
+.swiper-button-prev {
+  left: -10px;
 }
 
 .responsibility {
