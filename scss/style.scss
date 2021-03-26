@@ -358,14 +358,14 @@ h3 {
   -moz-border-radius: 100%;
   -ms-border-radius: 100%;
   -o-border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .slick-next:hover,
 .slick-prev:hover {
   background-color: #61587a;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 .slick-next:active,
 .slick-prev:active {
@@ -377,15 +377,29 @@ h3 {
 }
 
 .slick-next {
-  right: -60px;
+  right: -80px;
 }
 
 .slick-prev {
-  left: -60px;
+  left: -80px;
 }
 
 .slick-prev.slick-disabled {
   display: none;
+}
+.slick-next.slick-disabled path {
+  fill: rgba(255, 255, 255, 0.08);
+}
+
+.slick-next.slick-disabled:active {
+  background-color: transparent;
+}
+.slick-next.slick-disabled:hover {
+  background-color: transparent;
+  cursor: default;
+}
+.slick-next.slick-disabled {
+  cursor: default;
 }
 
 // .swiper-container {
