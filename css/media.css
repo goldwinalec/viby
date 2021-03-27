@@ -90,6 +90,26 @@
     width: 15px;
     height: 24px;
   }
+  .main-top__link:hover {
+    background: #ff5151;
+  }
+  .header__phone:hover::after {
+    background-color: transparent;
+  }
+  .footer__social-link:hover path {
+    fill: #ffffff;
+  }
+  .footer__social-link:hover rect,
+  .footer__social-link:hover circle {
+    stroke: #ffffff;
+  }
+  .footer__btn:hover {
+    background: #ff5151;
+  }
+  .footer__phone:hover::after,
+  .footer__email:hover::after {
+    background-color: transparent;
+  }
 }
 
 @media (max-width: 991px) {
