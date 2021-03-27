@@ -208,12 +208,12 @@ h3 {
   content: "";
   position: absolute;
   left: 0;
-  top: 10px;
-  width: 307px;
-  height: 319px;
+  top: 155px;
+  width: 100%;
+  height: 100%;
   background-image: url("/images/description-bg.svg");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 267px 319px;
   z-index: -1;
 }
 

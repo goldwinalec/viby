@@ -310,13 +310,13 @@ h3 {
   content: "";
   position: absolute;
   left: 0;
-  top: 10px;
-  width: 307px;
-  height: 319px;
+  top: 155px;
+  width: 100%;
+  height: 100%;
   background-image: url("/images/description-bg.svg");
   background-repeat: no-repeat;
-  -webkit-background-size: 100% 100%;
-          background-size: 100%;
+  -webkit-background-size: 267px 319px;
+          background-size: 267px 319px;
   z-index: -1;
 }
 
@@ -946,6 +946,10 @@ h3 {
   .main-top__title {
     max-width: 70%;
   }
+  .description::after {
+    -webkit-background-size: 166px 198px;
+            background-size: 166px 198px;
+  }
   .features {
     padding: 100px 0;
     background-position: 0 32%;
@@ -1061,6 +1065,10 @@ h3 {
   }
   .footer__inner {
     padding: 0;
+  }
+  .description::after {
+    -webkit-background-size: 75px 92px;
+            background-size: 75px 92px;
   }
 }
 
@@ -1377,6 +1385,9 @@ h3 {
   .footer__input {
     margin-bottom: 24px;
   }
+  .description::after {
+    top: 10px;
+  }
 }
 
 @media (max-width: 568px) {
@@ -1461,19 +1472,25 @@ h3 {
   .description {
     padding: 6em 0 52px;
   }
+  .description::after {
+    top: -5px;
+  }
 }
 
 @media (max-width: 480px) {
   .description {
     padding: 4em 0 52px;
   }
+  .description::after {
+    top: -15px;
+  }
 }
 
 @media (max-width: 410px) {
   .main__img {
-    top: -15em;
+    top: -18em;
   }
   .main {
-    margin-bottom: 16em;
+    margin-bottom: 19em;
   }
 }
