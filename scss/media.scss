@@ -82,7 +82,7 @@
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
   .container {
     max-width: 900px;
   }
@@ -102,6 +102,9 @@
   .header__phone:hover::after {
     background-color: transparent;
   }
+  .header__phone:active::after {
+    background-color: #ffffff;
+  }
   .footer__social-link:hover path {
     fill: #ffffff;
   }
@@ -112,9 +115,9 @@
   .footer__btn:hover {
     background: #ff5151;
   }
-  .footer__phone:hover::after,
-  .footer__email:hover::after {
-    background-color: transparent;
+  .footer__phone:active::after,
+  .footer__email:active::after {
+    background-color: #ffffff;
   }
   .slick-next:hover,
   .slick-prev:hover {

@@ -977,6 +977,9 @@ h3 {
   .header__phone:hover::after {
     background-color: transparent;
   }
+  .header__phone:active::after {
+    background-color: #ffffff;
+  }
   .footer__social-link:hover path {
     fill: #ffffff;
   }
@@ -987,9 +990,9 @@ h3 {
   .footer__btn:hover {
     background: #ff5151;
   }
-  .footer__phone:hover::after,
-  .footer__email:hover::after {
-    background-color: transparent;
+  .footer__phone:active::after,
+  .footer__email:active::after {
+    background-color: #ffffff;
   }
   .slick-next:hover,
   .slick-prev:hover {
