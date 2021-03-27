@@ -1085,6 +1085,7 @@ h3 {
   .slick-dots {
     top: -84px;
     text-align: right;
+    bottom: unset;
   }
   .slick-next {
     right: -15px;
