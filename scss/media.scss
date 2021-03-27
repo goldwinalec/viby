@@ -44,9 +44,6 @@
     width: 50%;
     margin-left: 15px;
   }
-  .features__title {
-    font-size: 30px;
-  }
   .features__item + .features__item {
     margin-top: 80px;
   }
@@ -127,6 +124,10 @@
   .slick-prev:active {
     background-color: #61587a;
   }
+  .footer__inner {
+    padding: 0;
+    // flex-direction: column;
+  }
 }
 @media (max-width: 991px) {
   .container {
@@ -139,16 +140,19 @@
   .responsibility__title {
     font-size: 36px;
   }
-  .main-bottom__title {
-    font-size: 30px;
-  }
+  .main-bottom__title,
   .features__title {
     font-size: 30px;
+  }
+
+  .footer__title {
+    font-size: 36px;
   }
   .main {
     background-image: url("/images/main-bg-tablet.svg");
   }
-  .features {
+  .features,
+  .footer {
     padding: 50px 0;
   }
   .responsibility {
@@ -195,6 +199,31 @@
   }
   .responsibility__text + .responsibility__text {
     margin-left: 30px;
+  }
+  .footer__title {
+    flex-basis: 100%;
+  }
+  .footer__form {
+    flex-basis: 100%;
+    order: 1;
+    margin-right: 0;
+    margin-bottom: 36px;
+  }
+  .footer__social {
+    order: 2;
+    display: inline-flex;
+    margin-bottom: auto;
+  }
+  .footer__links {
+    order: 2;
+    flex-basis: 30%;
+  }
+  .footer__input {
+    flex-basis: 48%;
+  }
+  .footer__btn {
+    flex-basis: 48%;
+    margin-left: auto;
   }
 }
 
@@ -308,12 +337,33 @@
   .slick-dots li {
     margin: 0 3px;
   }
+  .footer {
+    padding: 24px 0 36px;
+  }
+
+  .footer__title {
+    margin-bottom: 38px;
+  }
 }
 
 @media (max-width: 622px) {
   .features {
     background-size: auto 500px;
     background-position: 0px 32%;
+  }
+  .responsibility__img {
+    margin-bottom: -40px;
+  }
+  .footer__form {
+    flex-direction: column;
+  }
+  .footer__input,
+  .footer__btn {
+    flex-basis: 100%;
+    width: 100%;
+  }
+  .footer__input {
+    margin-bottom: 24px;
   }
 }
 
@@ -343,13 +393,10 @@
     margin-left: 0;
     margin-top: 16px;
   }
-  .main-top__title {
-    font-size: 26px;
-  }
-  .opportunities__title {
-    font-size: 26px;
-  }
-  .responsibility__title {
+  .main-top__title,
+  .opportunities__title,
+  .responsibility__title,
+  .footer__title {
     font-size: 26px;
   }
   .main-top__title br {

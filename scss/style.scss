@@ -52,7 +52,7 @@ h3 {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 10;
+  z-index: 11;
 }
 
 .header__inner {
@@ -153,6 +153,7 @@ h3 {
   -ms-transition: all 0.1s ease-in;
   -o-transition: all 0.1s ease-in;
   width: 220px;
+  scroll-behavior: smooth;
 }
 
 .main-top__link:hover {
@@ -359,6 +360,13 @@ h3 {
   height: 10px;
 }
 
+.slick-dots li button:before {
+  font-size: 0px;
+  line-height: 10px;
+  width: 10px;
+  height: 10px;
+}
+
 .slick-dots .slick-active {
   background-color: #fff;
 }
@@ -465,7 +473,8 @@ h3 {
   @extend %robotomono-bold;
   font-size: 38px;
   line-height: 1.2;
-  margin-right: 225px;
+  flex-basis: 75%;
+  margin-bottom: 58px;
 }
 
 .footer__inner {
@@ -473,16 +482,16 @@ h3 {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-}
-
-.footer__inner + .footer__inner {
-  margin-top: 58px;
+  flex-wrap: wrap;
 }
 
 .footer__social {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  align-self: flex-end;
+  justify-content: center;
+  flex-basis: 7%;
+  margin-bottom: 58px;
 }
 
 .footer__social-item + .footer__social-item {
