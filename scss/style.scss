@@ -202,29 +202,29 @@ h3 {
   justify-content: space-between;
 }
 
-.features__item:first-child .features__info {
+.personal__info {
   text-align: right;
   padding-right: 110px;
 }
 
-.features__item:nth-child(3) .features__info {
+.prices__info {
   text-align: right;
   padding-right: 110px;
 }
 
-.features__item:first-child {
+.personal {
   margin-bottom: 260px;
 }
 
-.features__item:nth-child(2) {
+.viewers {
   margin-bottom: 219px;
 }
 
-.features__item:nth-child(3) {
+.prices {
   margin-bottom: 201px;
 }
 
-.features__item:nth-child(3) .features__img {
+.prices__img {
   margin-left: -17px;
 }
 
@@ -239,24 +239,28 @@ h3 {
   color: rgba(255, 255, 255, 0.8);
 }
 
-.features__item:first-child .features__text {
+.personal__text {
   max-width: 510px;
 }
 
-.features__item:nth-child(2) .features__text {
+.viewers__text {
   max-width: 400px;
 }
 
-.features__item:nth-child(3) .features__text {
+.prices__text {
   max-width: 400px;
 }
 
-.features__item:last-child .features__text {
+.statistic__text {
   max-width: 510px;
 }
 
-.features__item:nth-child(2) .features__img {
+.viewers__img {
   padding-top: 123px;
+  margin-left: 15px;
+}
+.statistic__img {
+  margin-left: 15px;
 }
 
 .list__img {
