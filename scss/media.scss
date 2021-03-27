@@ -74,6 +74,15 @@
   .slick-prev {
     left: -45px;
   }
+  .responsibility__title {
+    padding-left: 0;
+  }
+  .responsibility__inner {
+    padding: 0;
+  }
+  .responsibility__img {
+    width: 100%;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -119,6 +128,9 @@
     font-size: 36px;
     max-width: unset;
   }
+  .responsibility__title {
+    font-size: 36px;
+  }
   .main-bottom__title {
     font-size: 30px;
   }
@@ -130,6 +142,9 @@
   }
   .features {
     padding: 50px 0;
+  }
+  .responsibility {
+    padding-top: 50px;
   }
   .features__item {
     flex-direction: column;
@@ -160,6 +175,18 @@
     background-image: url("/images/features-bg-tablet.svg");
     background-size: contain;
     background-position: 0 30%;
+  }
+  .responsibility__inner {
+    margin-bottom: 50px;
+  }
+  .responsibility__text:first-child {
+    flex-basis: 43%;
+  }
+  .responsibility__text:last-child {
+    flex-basis: 55%;
+  }
+  .responsibility__text + .responsibility__text {
+    margin-left: 30px;
   }
 }
 
@@ -203,6 +230,9 @@
   }
   .features__title {
     font-size: 24px;
+  }
+  .opportunities {
+    padding: 25px 0 20px;
   }
   .opportunities__item-title {
     font-size: 24px;
@@ -252,6 +282,21 @@
   .slick-dots li {
     margin: 0 3px;
   }
+  .responsibility__inner {
+    flex-direction: column;
+  }
+  .responsibility__text {
+    display: inline;
+  }
+  .responsibility__text:first-child {
+    flex-basis: 100%;
+  }
+  .responsibility__text:last-child {
+    flex-basis: 100%;
+  }
+  .responsibility__text + .responsibility__text {
+    margin-left: 0px;
+  }
 }
 
 @media (max-width: 622px) {
@@ -290,7 +335,12 @@
   .main-top__title {
     font-size: 26px;
   }
-
+  .opportunities__title {
+    font-size: 26px;
+  }
+  .responsibility__title {
+    font-size: 26px;
+  }
   .main-top__title br {
     display: none;
   }
@@ -324,5 +374,8 @@
   .slick-next:hover,
   .slick-prev:hover {
     background-color: transparent;
+  }
+  .responsibility {
+    padding-top: 30px;
   }
 }
