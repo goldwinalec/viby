@@ -119,11 +119,19 @@
   .footer__email:hover::after {
     background-color: transparent;
   }
+  .slick-next:hover,
+  .slick-prev:hover {
+    background-color: transparent;
+  }
+  .slick-next:active,
+  .slick-prev:active {
+    background-color: #61587a;
+  }
 }
 
 @media (max-width: 991px) {
   .container {
-    max-width: 880px;
+    max-width: 800px;
   }
   .main-top__title {
     font-size: 36px;
@@ -210,10 +218,36 @@
 }
 
 @media (max-width: 860px) {
+  .container {
+    max-width: 700px;
+  }
   .features {
     -webkit-background-size: auto 700px;
             background-size: auto 700px;
     background-position: 0px 30%;
+  }
+  .responsibility__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .responsibility__text {
+    display: inline;
+  }
+  .responsibility__text:first-child {
+    -webkit-flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
+  }
+  .responsibility__text:last-child {
+    -webkit-flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
+  }
+  .responsibility__text + .responsibility__text {
+    margin-left: 0px;
   }
 }
 
@@ -310,29 +344,6 @@
   .slick-dots li {
     margin: 0 3px;
   }
-  .responsibility__inner {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .responsibility__text {
-    display: inline;
-  }
-  .responsibility__text:first-child {
-    -webkit-flex-basis: 100%;
-        -ms-flex-preferred-size: 100%;
-            flex-basis: 100%;
-  }
-  .responsibility__text:last-child {
-    -webkit-flex-basis: 100%;
-        -ms-flex-preferred-size: 100%;
-            flex-basis: 100%;
-  }
-  .responsibility__text + .responsibility__text {
-    margin-left: 0px;
-  }
 }
 
 @media (max-width: 622px) {
@@ -417,10 +428,6 @@
   .slick-next,
   .slick-prev {
     top: 25%;
-  }
-  .slick-next:hover,
-  .slick-prev:hover {
-    background-color: transparent;
   }
   .responsibility {
     padding-top: 30px;
