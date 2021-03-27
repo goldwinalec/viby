@@ -1192,4 +1192,8 @@ h3 {
   .slick-prev {
     top: 25%;
   }
+  .slick-next:hover,
+  .slick-prev:hover {
+    background-color: transparent;
+  }
 }
