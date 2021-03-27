@@ -56,11 +56,39 @@
   .list__item {
     font-size: 20px;
   }
+  .opportunities__item-img {
+    width: 40%;
+  }
+  .opportunities__title {
+    padding-left: 0;
+  }
+  .opportunities__item-title {
+    font-size: 30px;
+  }
+  .opportunities__item-info {
+    padding-left: 0px;
+  }
+  .slick-next {
+    right: -45px;
+  }
+  .slick-prev {
+    left: -45px;
+  }
 }
 
 @media (max-width: 1024px) {
   .container {
     max-width: 900px;
+  }
+  .slick-next,
+  .slick-prev {
+    width: 40px;
+    height: 40px;
+  }
+  .slick-next svg,
+  .slick-prev svg {
+    width: 15px;
+    height: 24px;
   }
 }
 
@@ -73,6 +101,9 @@
     max-width: unset;
   }
   .main-bottom__title {
+    font-size: 30px;
+  }
+  .features__title {
     font-size: 30px;
   }
   .main {
@@ -142,8 +173,11 @@
   .main-top__title {
     font-size: 30px;
   }
+  .opportunities__title {
+    font-size: 30px;
+  }
   .main-bottom__title {
-    font-size: 28px;
+    font-size: 24px;
   }
   .features__item + .features__item {
     margin-top: 50px;
@@ -163,6 +197,63 @@
   }
   .features__title {
     font-size: 24px;
+  }
+  .opportunities__item-title {
+    font-size: 24px;
+  }
+  .opportunities__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 0;
+  }
+  .opportunities__item-img {
+    -webkit-box-ordinal-group: 1;
+    -webkit-order: 0;
+        -ms-flex-order: 0;
+            order: 0;
+    width: 60%;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 10px;
+  }
+  .opportunities__item-info {
+    -webkit-box-ordinal-group: 2;
+    -webkit-order: 1;
+        -ms-flex-order: 1;
+            order: 1;
+    margin: 0;
+  }
+  .slick-dots {
+    top: -84px;
+    text-align: right;
+  }
+  .slick-next {
+    right: -15px;
+    top: 30%;
+  }
+  .slick-prev {
+    left: -15px;
+    top: 30%;
+  }
+  .slick-dots li button {
+    width: 4px;
+    height: 4px;
+  }
+  .slick-dots li button:before {
+    font-size: 0px;
+    line-height: 4px;
+    width: 4px;
+    height: 4px;
+  }
+  .slick-dots li {
+    width: 4px;
+    height: 4px;
+  }
+  .slick-dots li {
+    margin: 0 3px;
   }
 }
 
