@@ -40,5 +40,5 @@ $('.opportunities__items').slick(
 $('.opportunities__item-text').shorten({
 	moreText: 'Читать далее',
     lessText:'',
-    showChars: 350
+    showChars: 348
 });
