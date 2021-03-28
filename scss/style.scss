@@ -267,14 +267,16 @@ h3 {
   background-color: #16083a;
   display: block;
   position: relative;
-  // margin-top: 100px;
   z-index: 2;
 }
 
 .background-top {
   position: absolute;
+  left: 0;
+  right: 0;
   top: -5em;
   z-index: -1;
+  width: 100%;
 }
 
 .background-bottom {

@@ -379,8 +379,11 @@ h3 {
 
 .background-top {
   position: absolute;
+  left: 0;
+  right: 0;
   top: -5em;
   z-index: -1;
+  width: 100%;
 }
 
 .background-bottom {
@@ -1124,10 +1127,10 @@ h3 {
             background-size: 75px 92px;
   }
   .background-top {
-    top: -10em;
+    top: -5em;
   }
   .background-bottom {
-    bottom: -10em;
+    bottom: -5em;
   }
 }
 
@@ -1190,6 +1193,12 @@ h3 {
   .features__info {
     max-width: 100%;
     text-align: left;
+  }
+  .background-top {
+    top: -3em;
+  }
+  .background-bottom {
+    bottom: -3em;
   }
   .features__list {
     margin-bottom: 52px;
@@ -1346,12 +1355,6 @@ h3 {
   }
   .features__title {
     font-size: 24px;
-  }
-  .background-top {
-    top: -12em;
-  }
-  .background-bottom {
-    bottom: -12em;
   }
   .opportunities {
     padding: 25px 0 20px;
@@ -1537,12 +1540,6 @@ h3 {
   .description::after {
     top: -5px;
   }
-  .background-top {
-    top: -14em;
-  }
-  .background-bottom {
-    bottom: -14em;
-  }
 }
 
 @media (max-width: 480px) {
@@ -1551,12 +1548,6 @@ h3 {
   }
   .description::after {
     top: -15px;
-  }
-  .background-top {
-    top: -16em;
-  }
-  .background-bottom {
-    bottom: -16em;
   }
 }
 

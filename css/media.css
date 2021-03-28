@@ -166,10 +166,10 @@
             background-size: 75px 92px;
   }
   .background-top {
-    top: -10em;
+    top: -5em;
   }
   .background-bottom {
-    bottom: -10em;
+    bottom: -5em;
   }
 }
 
@@ -232,6 +232,12 @@
   .features__info {
     max-width: 100%;
     text-align: left;
+  }
+  .background-top {
+    top: -3em;
+  }
+  .background-bottom {
+    bottom: -3em;
   }
   .features__list {
     margin-bottom: 52px;
@@ -388,12 +394,6 @@
   }
   .features__title {
     font-size: 24px;
-  }
-  .background-top {
-    top: -12em;
-  }
-  .background-bottom {
-    bottom: -12em;
   }
   .opportunities {
     padding: 25px 0 20px;
@@ -579,12 +579,6 @@
   .description::after {
     top: -5px;
   }
-  .background-top {
-    top: -14em;
-  }
-  .background-bottom {
-    bottom: -14em;
-  }
 }
 
 @media (max-width: 480px) {
@@ -593,12 +587,6 @@
   }
   .description::after {
     top: -15px;
-  }
-  .background-top {
-    top: -16em;
-  }
-  .background-bottom {
-    bottom: -16em;
   }
 }
 
