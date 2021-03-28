@@ -235,10 +235,10 @@ h3 {
 
 .features {
   padding: 134px 0 128px;
-  background-image: url("/images/features-bg.svg");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: 0 35%;
+  // background-image: url("/images/features-bg.svg");
+  // background-repeat: no-repeat;
+  // background-size: 100%;
+  // background-position: 0 35%;
 }
 
 .features__items {
@@ -261,12 +261,39 @@ h3 {
   padding-right: 110px;
 }
 
-.personal {
-  margin-bottom: 260px;
+.viewers {
+  margin-top: 180px;
+  margin-bottom: 180px;
+  background-color: #16083a;
+  display: block;
+  position: relative;
+  // margin-top: 100px;
+  z-index: 2;
 }
 
-.viewers {
-  margin-bottom: 219px;
+.background-top {
+  position: absolute;
+  top: -5em;
+  z-index: -1;
+}
+
+.background-bottom {
+  position: absolute;
+  bottom: -6em;
+  z-index: -1;
+}
+.viewers__title {
+  z-index: 2;
+}
+.viewers__info {
+  z-index: 2;
+  padding-left: 110px;
+}
+.viewers__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 2;
 }
 
 .prices {
@@ -294,6 +321,7 @@ h3 {
 
 .viewers__text {
   max-width: 400px;
+  z-index: 2;
 }
 
 .prices__text {
@@ -307,6 +335,7 @@ h3 {
 .viewers__img {
   padding-top: 123px;
   margin-left: 15px;
+  z-index: 2;
 }
 .statistic__img {
   margin-left: 15px;
