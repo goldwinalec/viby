@@ -804,6 +804,7 @@ h3 {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: relative;
 }
 
 .footer__input {
@@ -816,7 +817,23 @@ h3 {
   height: 48px;
   color: #fff;
   padding: 16px 90px 16px 16px;
-  cursor: pointer;
+}
+
+.footer__input--error {
+  border: 1px solid red;
+}
+
+.footer__form--sending::before {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 15px;
+  top: 16px;
+  left: -25px;
+  background-image: url("/images/loading.gif");
+  background-repeat: no-repeat;
+  -webkit-background-size: 15px 15px;
+          background-size: 15px 15px;
 }
 
 .footer__input:focus {
@@ -1242,9 +1259,10 @@ h3 {
     display: -ms-inline-flexbox;
     display: inline-flex;
     margin-bottom: auto;
-    -webkit-flex-basis: 22%;
-        -ms-flex-preferred-size: 22%;
-            flex-basis: 22%;
+    -webkit-flex-basis: 11%;
+        -ms-flex-preferred-size: 11%;
+            flex-basis: 11%;
+    margin-right: auto;
   }
   .footer__links {
     -webkit-box-ordinal-group: 3;

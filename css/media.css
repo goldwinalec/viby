@@ -288,9 +288,10 @@
     display: -ms-inline-flexbox;
     display: inline-flex;
     margin-bottom: auto;
-    -webkit-flex-basis: 22%;
-        -ms-flex-preferred-size: 22%;
-            flex-basis: 22%;
+    -webkit-flex-basis: 11%;
+        -ms-flex-preferred-size: 11%;
+            flex-basis: 11%;
+    margin-right: auto;
   }
   .footer__links {
     -webkit-box-ordinal-group: 3;

@@ -605,6 +605,7 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
 }
 
 .footer__input {
@@ -616,7 +617,22 @@ h3 {
   height: 48px;
   color: #fff;
   padding: 16px 90px 16px 16px;
-  cursor: pointer;
+}
+
+.footer__input--error {
+  border: 1px solid red;
+}
+
+.footer__form--sending::before {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 15px;
+  top: 16px;
+  left: -25px;
+  background-image: url("/images/loading.gif");
+  background-repeat: no-repeat;
+  background-size: 15px 15px;
 }
 
 .footer__input:focus {
