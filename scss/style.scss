@@ -620,7 +620,7 @@ h3 {
 }
 
 .footer__input--error {
-  border: 1px solid red;
+  box-shadow: 0 0 2px 1px red;
 }
 
 .footer__form--sending::before {

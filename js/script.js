@@ -72,7 +72,7 @@ async function formSend(e) {
       form.classList.remove('footer__form--sending');
     }
   } else {
-    alert('Заполните обязательное поле');
+    alert('Заполните обязательное поле в формате ivanivanov@mail.ru');
   }
 }
 
