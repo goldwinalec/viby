@@ -12,9 +12,9 @@
     $mail->IsHTML(true);
 
     // От кого письмо
-    $mail->setFrom('a-g1997@yandex.ru', 'viby.online');
-    // Кому отправить
-    $mail->addAddress('a-g1997@yandex.ru');
+    $mail->setFrom('info@viby.online', 'viby.online');
+    // Кому отправить (если адресов несколько, перечислить в скобках и кавычках через запятую. Например, $mail->addAddress('info@viby.online', 'info@viby.online');)
+    $mail->addAddress('info@viby.online');
     // Тема письма
     $mail->Subject = 'Заявка с сайта viby.online';
 
@@ -31,6 +31,7 @@
     if(!$mail->send()){
         $message = 'Ошибка';
     } else {
+        // Здесь можно изменить текст после отправки заявки
         $message = 'Данные отправлены!';
     }
 
