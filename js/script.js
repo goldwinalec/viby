@@ -118,3 +118,11 @@ function formRemoveError(input){
 function emailTest(input){
   return !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(input.value);
 }
+
+// плавный переход к футеру
+$(document).on('click', '.main-top__link', function () {
+    var linkID = $(this).attr('href');
+    $('html, body').animate({
+        scrollTop: $(linkID).offset().top
+    }, 'slow');
+});
