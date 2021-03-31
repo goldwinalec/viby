@@ -3,11 +3,11 @@ $('.opportunities__items').slick(
     {
         dots: true,
         infinite: false,
-        autoPlay: true,
+        autoplay: true,
+        autoplaySpeed: 5000,
         pauseOnFocus: true,
         pauseOnHover: true,
-        pauseOnFocus: true,
-
+        pauseOnDotsHover: true,
         prevArrow: `          <button type="button" class="slick-prev">
             <svg
               width="16"
