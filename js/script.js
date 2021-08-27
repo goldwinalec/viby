@@ -1,14 +1,13 @@
 // слайдер
-$('.opportunities__items').slick(
-    {
-        dots: true,
-        infinite: false,
-        autoplay: true,
-        autoplaySpeed: 5000,
-        pauseOnFocus: true,
-        pauseOnHover: true,
-        pauseOnDotsHover: true,
-        prevArrow: `          <button type="button" class="slick-prev">
+$(".opportunities__items").slick({
+  dots: true,
+  infinite: false,
+  autoplay: true,
+  autoplaySpeed: 5000,
+  pauseOnFocus: true,
+  pauseOnHover: true,
+  pauseOnDotsHover: true,
+  prevArrow: `          <button type="button" class="slick-prev">
             <svg
               width="16"
               height="26"
@@ -24,7 +23,7 @@ $('.opportunities__items').slick(
               />
             </svg>
           </button>`,
-          nextArrow: `          <button type="button" class="slick-next">
+  nextArrow: `          <button type="button" class="slick-next">
             <svg
               width="16"
               height="26"
@@ -39,20 +38,19 @@ $('.opportunities__items').slick(
                 fill="white"
               />
             </svg>
-          </button>`
-    }
-);
+          </button>`,
+});
 
 // сокращенный текст
-$('.opportunities__item-text').shorten({
-	moreText: 'Читать далее',
-    lessText:'',
-    showChars: 348
+$(".opportunities__item-text").shorten({
+  moreText: "Читать далее",
+  lessText: "",
+  showChars: 348,
 });
 
 // форма обратной связи
-const form = document.getElementById('form');
-form.addEventListener('submit', formSend);
+const form = document.getElementById("form");
+form.addEventListener("submit", formSend);
 
 async function formSend(e) {
   e.preventDefault();
@@ -60,74 +58,71 @@ async function formSend(e) {
 
   let formData = new FormData(form);
 
-  if(error === 0){
-    form.classList.add('footer__form--sending');
-    let response = await fetch('sendmail.php', {
-      method: 'POST',
+  if (error === 0) {
+    form.classList.add("footer__form--sending");
+    let response = await fetch("sendmail.php", {
+      method: "POST",
       body: formData,
     });
 
-    if(response.ok){
+    if (response.ok) {
       let result = await response.json();
       alert(result.message);
       form.reset();
-      form.classList.remove('footer__form--sending');
+      form.classList.remove("footer__form--sending");
     } else {
-      alert('Ошибка');
-      form.classList.remove('footer__form--sending');
+      alert("Ошибка");
+      form.classList.remove("footer__form--sending");
     }
   } else {
-    alert('Заполните обязательное поле в формате ivanivanov@mail.ru');
+    alert("Заполните обязательное поле в формате ivanivanov@mail.ru");
   }
 }
 
-function formValidate(form){
+function formValidate(form) {
   let error = 0;
-  let formReq = document.querySelectorAll('.footer__input--required');
-  const input = document.querySelector('.footer__input--email');
-
+  let formReq = document.querySelectorAll(".footer__input--required");
+  const input = document.querySelector(".footer__input--email");
 
   for (let index = 0; index < formReq.length; index++) {
-    const input = formReq[index]; 
+    const input = formReq[index];
     formRemoveError(input);
 
-    if(input.classList.contains('footer__input--email')){
-
-      if(emailTest(input)) {
-
+    if (input.classList.contains("footer__input--email")) {
+      if (emailTest(input)) {
         formAddError(input);
         error++;
       }
     } else {
-
-      if(input.value === '') {
-
-      formAddError(input);
-      error++;
-
+      if (input.value === "") {
+        formAddError(input);
+        error++;
       }
     }
   }
   return error;
 }
 
-function formAddError(input){
+function formAddError(input) {
   // input.parentElement.classList.add('footer__input--error');
-  input.classList.add('footer__input--error');
+  input.classList.add("footer__input--error");
 }
-function formRemoveError(input){
+function formRemoveError(input) {
   // input.parentElement.classList.remove('footer__input--error');
-  input.classList.remove('footer__input--error');
+  input.classList.remove("footer__input--error");
 }
 
-function emailTest(input){
+function emailTest(input) {
   return !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(input.value);
 }
 
 // плавный переход к футеру
-$(document).on('click', '.main-top__link', function () {
-    var linkID = $(this).attr('href');
-    $('html, body').animate({
-        scrollTop: $(linkID).offset().top
-    }, 'slow');
+$(document).on("click", ".main-top__link", function () {
+  var linkID = $(this).attr("href");
+  $("html, body").animate(
+    {
+      scrollTop: $(linkID).offset().top,
+    },
+    "slow"
+  );
 });
