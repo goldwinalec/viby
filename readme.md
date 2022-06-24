@@ -1,6 +1,8 @@
-Какую информацию нужно добавить перед публикацией:
+# Viby Website
 
-1. Добавить описание и ключевые слова сайта в 10 и 11 строчку, файл index.html
-2. Добавить ссылки на социальные сети в атрибут href - 481, 498, 514 строчки. Файл index.html
-3. Номер телефона на 34 и 558 строчках. Это элементы с классами `header__phone` и `footer__phone`. Файл index.html
-4. Изменить или добавить при необходимости адрес почты для получения писем с сайта. 15/17 строчки, файл sendmail.php. Сейчас там указана почта info@viby.online
+In this project, I used the following technologies:
+1. HTML
+2. CSS
+3. JavaScript (Slick Slider, Drop-down text)
+
+Link: https://goldwinalec-viby.netlify.app/
